@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgentGuard | Chandana Katta</title>
+<meta name="description" content="Artifact 2: AgentGuard, a proposal for safe AI agents in banking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="index.html">Chandana Katta</a><nav><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="visa-guide-usa.html">Artifact 1</a><a href="agentguard.html" aria-current="page">Artifact 2</a></nav></div></header>
+<main>
+
+<section class="hero"><div class="wrap">
+  <div class="eyebrow">Artifact 2 · AI Strategy &amp; Governance</div>
+  <h1>AgentGuard: Safe AI Agents in Banking</h1>
+  <p class="lead">A team proposal for a real problem in the news: customers giving their bank passwords to AI assistants. AgentGuard lets people use AI helpers with their bank accounts without handing over full control.</p>
+  <div class="btns"><a class="btn" href="AgentGuard-Presentation.pdf" target="_blank" rel="noopener">View the full presentation (PDF)</a></div>
+  <div class="meta"><span class="tag">Team project · Group of 5</span><span class="tag warm">AIML-500 Workshop One group project</span></div>
+  <div class="toc"><a href="#introduction">Introduction</a><a href="#description">Description</a><a href="#objective">Objective</a><a href="#process">Process</a><a href="#evidence">Slides</a><a href="#tools">Tools</a><a href="#value">Value</a><a href="#references">References</a></div>
+</div></section>
+
+<section id="introduction" style="padding-top:0"><div class="wrap"><div class="card">
+  <h2>Introduction</h2>
+  <p>In October 2026, several large U.S. banks reported finding outside AI agents inside customer accounts, logged in with the customers' own usernames and passwords. Most were not hackers. Customers had shared their passwords with AI assistants to get help with everyday banking. AgentGuard is my team's proposal for solving this safely: instead of blocking AI helpers or letting them act as the customer, the bank gives each AI agent its own identity, limited permissions, and a human approval step for anything risky.</p>
+</div></div></section>
+
+<section id="description"><div class="wrap grid2">
+  <div class="card">
+    <h2>Description</h2>
+    <p>When an AI agent logs in with a customer's password, the bank can't tell the agent from the real person, can't confirm what the customer approved, and can't stop the agent from moving money. AgentGuard adds an "AI trust layer" with five parts:</p>
+    <ul class="clean">
+      <li><strong>Verified agent identity:</strong> agents connect with a bank-issued token, never a password.</li>
+      <li><strong>Permission gate:</strong> read-only by default, with task limits and spending limits.</li>
+      <li><strong>Intent check:</strong> compares what the customer asked for with what the agent is trying to do.</li>
+      <li><strong>Risk engine:</strong> machine learning scores each request from 0 to 100.</li>
+      <li><strong>Human control:</strong> low risk is allowed, medium risk asks the customer, high risk goes to a fraud analyst.</li>
+    </ul>
+  </div>
+  <div class="card" id="objective">
+    <h2>Objective</h2>
+    <p>To apply AI and machine learning concepts to a current, real-world business problem, and to recommend a solution that is useful, safe, fair, and practical for a bank to test. The project also asked us to use generative AI responsibly, check its claims, and connect leadership and biblical principles to our design choices.</p>
+  </div>
+</div></section>
+
+<section id="process"><div class="wrap"><div class="card">
+  <h2>Process</h2>
+  <p>I worked on this project with a team of five classmates, and together we turned a breaking news story into one clear recommendation. We followed the design thinking steps:</p>
+  <ol class="steps">
+    <li><b>Empathize</b>Customers want AI help but are afraid of losing money. Bank fraud teams can't see which logins are AI agents.</li>
+    <li><b>Define</b>Let approved AI agents help customers without passwords and without unapproved money movement.</li>
+    <li><b>Ideate</b>We compared options, including blocking all agents. We rejected that idea because it is simple but unfair to customers who rely on AI tools, and chose the AgentGuard trust layer.</li>
+    <li><b>Prototype</b>We designed a 90-day pilot: 5,000 volunteer customers, two partner AI apps, read-only access, and bill pay up to $500.</li>
+    <li><b>Test</b>We set two targets: 80% fewer unapproved agent logins, and no more than 1% of real customers wrongly blocked, tracked by age group so no group is harmed more than others.</li>
+  </ol>
+  <p style="margin-top:6px">We used generative AI (Claude) to explore possible solutions, then checked every claim it made against news and government sources. All statistics came from the FTC and TD Bank, not from the AI.</p>
+</div></div></section>
+
+<section id="evidence"><div class="wrap">
+  <h2>Slides</h2>
+  <div class="shots">
+    <figure><a href="ag-solution.jpg" target="_blank" rel="noopener"><img src="ag-solution.jpg" alt="Slide: AgentGuard, an AI trust layer with five parts" loading="lazy"></a><figcaption>1. The solution: five layers that give an AI agent its own identity, limits, and approval path.</figcaption></figure>
+    <figure><a href="ag-how.jpg" target="_blank" rel="noopener"><img src="ag-how.jpg" alt="Slide: how the AI and ML work, classification, anomaly detection, risk score" loading="lazy"></a><figcaption>2. The machine learning behind it: classification, anomaly detection, and a 0 to 100 risk score.</figcaption></figure>
+    <figure><a href="ag-ux.jpg" target="_blank" rel="noopener"><img src="ag-ux.jpg" alt="Slide: six-step customer flow from connecting an agent to the activity center" loading="lazy"></a><figcaption>3. The customer experience: connect an agent, set permissions, and approve actions.</figcaption></figure>
+    <figure><a href="ag-safeguards.jpg" target="_blank" rel="noopener"><img src="ag-safeguards.jpg" alt="Slide: risks and safeguards for accuracy, bias, human oversight, privacy" loading="lazy"></a><figcaption>4. Responsible AI: safeguards for accuracy, bias and fairness, human oversight, and privacy.</figcaption></figure>
+    <figure><a href="ag-pilot.jpg" target="_blank" rel="noopener"><img src="ag-pilot.jpg" alt="Slide: design thinking steps and 90-day pilot targets" loading="lazy"></a><figcaption>5. Design thinking and a 90-day pilot with measurable success and harm targets.</figcaption></figure>
+  </div>
+  <p class="note" style="margin-top:14px">Classmates' names and student ID numbers were removed from this portfolio copy of the presentation for privacy.</p>
+</div></section>
+
+<section id="tools"><div class="wrap grid2">
+  <div class="card">
+    <h2>Tools and Technologies Used</h2>
+    <ul class="clean">
+      <li>Machine learning concepts: classification, anomaly detection, risk prediction</li>
+      <li>Natural language processing for checking agent requests</li>
+      <li>Claude (Anthropic) for exploring solutions, with every claim fact-checked</li>
+      <li>News and government sources (Axios, Decrypt, FTC, TD Bank, Brave)</li>
+      <li>Design thinking: Empathize, Define, Ideate, Prototype, Test</li>
+      <li>Microsoft PowerPoint</li>
+    </ul>
+  </div>
+  <div class="card value" id="value">
+    <h2>Value Proposition</h2>
+    <p>This project shows that I can take a fast-moving problem from the news, understand the business and security risks, and turn AI and ML concepts into a practical plan a bank could actually test. It also shows I can work with a team to agree on one clear recommendation.</p>
+  </div>
+</div></section>
+
+<section><div class="wrap grid2">
+  <div class="card">
+    <h2>Unique Value</h2>
+    <p>Many AI proposals focus only on what the technology can do. AgentGuard puts equal weight on what could go wrong: real customers wrongly blocked, older adults and people using accessibility tools being flagged more often, and unclear liability when an agent moves money. The plan keeps humans in charge of money and account decisions and includes a measurable "harm check," not just a success target.</p>
+  </div>
+  <div class="card">
+    <h2>Relevance</h2>
+    <p>AI agents that act on people's behalf are spreading quickly, and banking is one of the first places where the risks are real. The same approach of separate agent identity, limited permissions, intent checks, risk scoring, and human approval can apply to healthcare portals, insurance, payroll, and any system where an AI might act for a person.</p>
+  </div>
+</div></section>
+
+<section id="references" class="refs"><div class="wrap"><div class="card">
+  <h2>References</h2>
+  <p>Brave. (2025, August). <em>Agentic browser security: Indirect prompt injection in Perplexity Comet</em>. https://brave.com/blog/comet-prompt-injection/</p>
+  <p>Decrypt. (2026, October 22). <em>Major banks find rogue AI agents inside customer accounts, and they're 'horrified'</em>. https://decrypt.co/381602/banks-rogue-ai-agents-inside-customer-accounts</p>
+  <p>Federal Trade Commission. (2026, March). <em>FTC testifies before Joint Economic Committee on agency's efforts to combat fraud</em>. https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-testifies-joint-economic-committee-agencys-efforts-combat-fraud</p>
+  <p>TD Bank. (2026, March 31). <em>Nearly 80% of Americans use AI tools, but most still want humans making financial decisions, TD survey finds</em>. https://stories.td.com/us/en/article/nearly-80-of-americans-use-ai-tools-but-most-still-want-humans-making-financial-decisions-td-survey-finds</p>
+  <p><em>The Holy Bible, New International Version</em>. (2011). Biblica. (Original work published 1978)</p>
+</div></div></section>
+
+</main>
+<footer><div class="wrap">© 2026 Chandana Katta · <a href="https://github.com/chandanakatta17">GitHub</a> · Portfolio built for graduate coursework at Indiana Wesleyan University</div></footer>
+</body>
+</html>
