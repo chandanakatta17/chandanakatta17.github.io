@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>When to Trust an LLM | Chandana Katta</title>
+<meta name="description" content="Artifact 3: When to Trust an LLM, a quick-reference guide to the strengths and limits of large language models.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="brand" href="index.html">Chandana Katta</a><nav><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="visa-guide-usa.html">Artifact 1</a><a href="agentguard.html">Artifact 2</a><a href="llm-guide.html" aria-current="page">Artifact 3</a></nav></div></header>
+<main>
+
+<section class="hero"><div class="wrap">
+  <div class="eyebrow">Artifact 3 · Responsible AI Use</div>
+  <h1>When to Trust an LLM: A Quick-Reference Guide</h1>
+  <p class="lead">A one-page guide that helps anyone decide when an AI chatbot like ChatGPT or Claude is a good fit, and when its answers need a source, a tool, or an expert to check them.</p>
+  <div class="btns"><a class="btn" href="LLM-Trust-Guide.pdf" target="_blank" rel="noopener">Download the guide (PDF)</a><a class="btn ghost" href="LLM-Exercise-Record.pdf" target="_blank" rel="noopener">See the exercise record (PDF)</a></div>
+  <div class="meta"><span class="tag">Individual work</span><span class="tag warm">AIML-500 Workshop 3 interactive exercise</span></div>
+  <div class="toc"><a href="#introduction">Introduction</a><a href="#description">Description</a><a href="#objective">Objective</a><a href="#process">Process</a><a href="#evidence">Evidence</a><a href="#tools">Tools</a><a href="#value">Value</a><a href="#references">References</a></div>
+</div></section>
+
+<section id="introduction" style="padding-top:0"><div class="wrap"><div class="card">
+  <h2>Introduction</h2>
+  <p>AI chatbots are now part of everyday work, but many people either trust them too much or not at all. In a course exercise, I learned how large language models (LLMs) are trained, why they sometimes give confident answers that are wrong, and which tasks they handle well. I turned what I learned into a simple, downloadable guide that coworkers, managers, and students can keep next to them when they use AI.</p>
+</div></div></section>
+
+<section id="description"><div class="wrap grid2">
+  <div class="card">
+    <h2>Description</h2>
+    <p>The guide fits on one page and has four parts:</p>
+    <ul class="clean">
+      <li><strong>Why chatbots make things up:</strong> a plain-language explanation of next-word prediction and hallucination.</li>
+      <li><strong>Good Fit vs. Danger Zone:</strong> ten common tasks, each with what to check or which tool to use.</li>
+      <li><strong>What an LLM usually learned from:</strong> what is likely in its training data, and what is not, like private messages or today's prices.</li>
+      <li><strong>A three-question check</strong> to use before trusting any answer.</li>
+    </ul>
+  </div>
+  <div class="card" id="objective">
+    <h2>Objective</h2>
+    <p>To understand how LLMs are trained and what that means for what they can and cannot do reliably, and to turn that understanding into a practical tool that helps people use AI safely and with the right amount of trust.</p>
+  </div>
+</div></section>
+
+<section id="process"><div class="wrap"><div class="card">
+  <h2>Process</h2>
+  <ol class="steps">
+    <li class="fail"><b>Be the model</b>An AI tutor asked me to finish sentences the way a language model would. "The capital of France is ___" was easy. Then it asked for the president of "Velmora," a country that does not exist, and I made up a name, "Leena," because it sounded right. That showed me firsthand how a hallucination happens.</li>
+    <li><b>Learn the mechanism</b>I explained in my own words why a model answers made-up questions: it predicts the most likely next words from patterns, and it has no built-in fact-checker.</li>
+    <li><b>Guess the training mix</b>I sorted sources like Wikipedia, Reddit, private text messages, and live stock prices by how much a model likely learned from them, and learned that models don't have automatic access to private or live information.</li>
+    <li><b>Good Fit or Danger Zone</b>I labeled ten real tasks and explained my reasons, such as why last week's research needs the paper or web search, and why product names still need a trademark check.</li>
+    <li><b>Build the guide</b>I organized my decisions into a one-page reference, using simple words, two color-coded columns, and a short checklist so it can be scanned in seconds.</li>
+  </ol>
+</div></div></section>
+
+<section id="evidence"><div class="wrap">
+  <h2>Evidence</h2>
+  <div class="shots">
+    <figure><a href="llm-guide.jpg" target="_blank" rel="noopener"><img src="llm-guide.jpg" alt="The one-page When to Trust an LLM guide" loading="lazy"></a><figcaption>1. The finished one-page guide (also available as a PDF download).</figcaption></figure>
+    <figure><a href="llm-velmora.jpg" target="_blank" rel="noopener"><img src="llm-velmora.jpg" alt="Exercise screenshot: inventing a president for the fictional country Velmora" loading="lazy"></a><figcaption>2. The "Velmora" test: I invented an answer that only sounded right, which is exactly how a hallucination works.</figcaption></figure>
+    <figure><a href="llm-stage4.jpg" target="_blank" rel="noopener"><img src="llm-stage4.jpg" alt="Exercise screenshot: Good Fit and Danger Zone decisions with reasons" loading="lazy"></a><figcaption>3. My Good Fit / Danger Zone decisions and reasoning, which became the core of the guide.</figcaption></figure>
+    <figure><a href="llm-summary.jpg" target="_blank" rel="noopener"><img src="llm-summary.jpg" alt="Exercise screenshot: completion summary and badge" loading="lazy"></a><figcaption>4. The completion summary from the AI tutor at the end of the exercise.</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="tools"><div class="wrap grid2">
+  <div class="card">
+    <h2>Tools and Technologies Used</h2>
+    <ul class="clean">
+      <li>Claude (Anthropic), running the course's "Professor Predict" tutoring prompt</li>
+      <li>Large language model concepts: pretraining, next-token prediction, post-training, hallucination</li>
+      <li>IBM's beginner's guide to AI and machine learning (course reading)</li>
+      <li>HTML/CSS for the guide layout, exported to PDF</li>
+    </ul>
+  </div>
+  <div class="card value" id="value">
+    <h2>Value Proposition</h2>
+    <p>This guide shows that I understand not just how to use AI, but when not to rely on it alone. I can take a technical idea, like how language models are trained, and turn it into a simple tool that helps a whole team use AI more safely.</p>
+  </div>
+</div></section>
+
+<section><div class="wrap grid2">
+  <div class="card">
+    <h2>Unique Value</h2>
+    <p>Most AI tips are either too technical or too general ("double-check everything"). This guide is specific: it names real tasks, says exactly what to check or which tool to use for each, and explains why in one sentence. It was built from my own mistakes and decisions during the exercise, not copied from a list.</p>
+  </div>
+  <div class="card">
+    <h2>Relevance</h2>
+    <p>As companies roll out AI assistants, the biggest risk is people trusting confident but wrong answers in areas like finance, law, health, and customer data. A short, shared rule of thumb ("fluent is not the same as true") can support AI training programs and help organizations adopt AI responsibly.</p>
+  </div>
+</div></section>
+
+<section id="references" class="refs"><div class="wrap"><div class="card">
+  <h2>References</h2>
+  <p>IBM. (n.d.). <em>A beginner's guide to artificial intelligence and machine learning</em>. IBM Developer. https://developer.ibm.com/articles/cc-beginner-guide-machine-learning-ai-cognitive/</p>
+  <p>Indiana Wesleyan University. (2026). <em>3.3 Assignment: Professor Predict interactive exercise</em> [Course activity]. AIML-500 Machine Learning Fundamentals, Brightspace.</p>
+</div></div></section>
+
+</main>
+<footer><div class="wrap">© 2026 Chandana Katta · <a href="https://github.com/chandanakatta17">GitHub</a> · Portfolio built for graduate coursework at Indiana Wesleyan University</div></footer>
+</body>
+</html>
